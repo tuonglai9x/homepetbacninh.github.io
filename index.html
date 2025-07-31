@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html> 
+<head>
+     <title>Bệnh Viện Thú Y Homepet Bắc Ninh</title> 
+     <meta charset="utf-8">    <!--để hiên thị tiếng việt-->
+     <link rel="stylesheet" href="main.css">
+
+          <div id="header-placeholder"></div>
+          <script>
+          fetch('header.html')
+          .then(res => res.text())
+          .then(data => document.getElementById('header-placeholder').innerHTML = data);
+          </script>
+
+
+     
+      <style>
+       .box
+          {
+             width: 60px;
+             height: 60px;
+             background-color: rgb(139, 118, 118);   
+             color: rgb(255, 0, 43);     
+             display: flex;    
+             align-items: center;
+             justify-items: center;
+             padding: 10%;
+
+          }
+
+       </style>
+     
+</head>
+   <!--<div class="box"> nội dung vào đây nhé</divclass></div> ><!--khai báo box-->
+ <body>
+   <!--
+      <section style="background-color: #dd9309; color: white; text-align: center; padding: 60px 20px; position: relative;">
+    <h1 style="font-size: 48px; font-weight: bold;">BỆNH VIỆN THÚ Y HOMEPET</h1>
+    <p style="font-size: 24px; margin-top: 10px;">DỊCH VỤ</p>
+    <p style="font-size: 14px;">Trang chủ | Dịch vụ</p>
+    -->
+    <!-- Có thể chèn hình nền hoặc overlay thêm nếu cần -->
+  </section>
+<!-- Banner ở tại đây-->
+<div class="banner-container">
+  <div class="banner-slide active"><img src="Images/Banner1.png" alt="Banner 1"></div>
+  <div class="banner-slide"><img src="Images/Banner2.png" alt="Banner 2"></div>
+  <div class="banner-slide"><img src="Images/Banner3.png" alt="Banner 3"></div>
+  
+    <!-- Dấu chấm slide -->
+  <div class="dots" id="dots"></div>
+</div>
+  <!-- Mũi tên điều hướng -->
+  <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+  <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+</div>
+  <!-- Link JavaScript -->
+  <script src="banner.js"></script>
+
+<!--Tiếp đến nội dung dưới banner-->
+
+<section class="intro-section">
+  <div class="intro-left">
+    <p class="sub-title">Giới thiệu</p>
+    <h2>Bệnh viện thú y HomePet Bắc Ninh</h2>
+  </div>
+
+  <div class="intro-right">
+    <p>
+      Được thành lập vào năm 2021 với cái tên phòng khám thú y Homepet Bắc Ninh. Kể từ khi ra đời, dưới sự dẫn dắt của CEO Phạm Thị Hảo,
+      Homepet luôn tự hào là một trong những bệnh viện thú y hàng đầu Việt Nam. Nhiều năm qua, Homepet đã được khách hàng tin tưởng
+      và luôn đồng hành. Cùng với những dịch vụ đa dạng, Homepet luôn mang đến những trải nghiệm tốt và đáng nhớ nhất cho quý khách.
+    </p>
+    <a href="loigioithieu.html" class="read-more">ĐỌC THÊM →</a>
+    
+  </div>
+
+
+
+
+  <div class="intro-highlight">
+    <h1>5 NĂM</h1>
+   
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- đội ngũ -->
+<section style="padding: 40px; text-align: center;">
+  <h2 style="font-size: 28px; font-weight: bold;">ĐỘI NGŨ CỦA CHÚNG TÔI</h2>
+
+
+
+
+  <div class="staff-slider-container">
+    <div class="staff-slider-track" id="staffSliderTrack">
+
+      <div class="staff-member">
+        <img src="/Images/phamthihao.jpg" class="staff-avatar" alt="DR. Phạm Thị Hảo" />
+        <p style="font-weight: bold;">DR Phạm Thị Hảo - CEO Sáng lập HOMEPET Bắc Ninh -</p>
+      </div>
+
+      <div class="staff-member">
+        <img src="/Images/Khuong Thi Lan.jpg" class="staff-avatar" alt="Dr. Khương Thị Lan" />
+        <p style="font-weight: bold;">Dr. Khương Thị Lan - BS chuyên khoa nội- Quản lý cơ sở 1</p>
+      </div>
+
+      <div class="staff-member">
+        <img src="/Images/tran thi quynh.jpg" class="staff-avatar" alt="Dr. Trần Thị Quỳnh" />
+        <p style="font-weight: bold;">Dr. Trần Thị Quỳnh - Trưởng khoa truyền nhiễm</p>
+      </div>
+
+      <div class="staff-member">
+        <img src="/Images/Nguyen Van Anh.jpg" class="staff-avatar" alt="Dr. Nguyễn Vân Anh" />
+        <p style="font-weight: bold;">Dr. Nguyễn Vân Anh - Quản lý cơ sở 2</p>
+      </div>
+
+      <div class="staff-member">
+        <img src="/Images/Thu trang.jpg" class="staff-avatar" alt="Nguyễn Thu Trang" />
+        <p style="font-weight: bold;">Nguyễn Thu Trang - Chuyên viên spa</p>
+      </div>
+
+      <div class="staff-member">
+        <img src="/Images/thanhthuy.jpg" class="staff-avatar" alt="Nguyễn Thanh Thùy" />
+        <p style="font-weight: bold;">Nguyễn Thanh Thùy - Chuyên viên spa</p>
+      </div>
+
+      <div class="staff-member">
+        <img src="/Images/Pham chi huong.jpg" class="staff-avatar" alt="Chi Hương" />
+        <p style="font-weight: bold;">Phạm Chí Hướng-Sinh viên thực tập</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--Dịch vụ-->
+<section style="padding: 40px; text-align: center;">
+  <h2 style="font-size: 28px; font-weight: bold;">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+
+<div class="services-grid">
+    <!-- dịch vụ 1 -->
+    <div style="max-width: 220px;">
+      <img src="/Images/capcuu.png"  class="service-img" alt="Anh cap cuu"  />
+      <p style="font-weight: bold;">CẤP CỨU</p>
+      <a href="capcuu.html" class="read-more">XEM THÊM →</a>
+    </div>
+
+    <!-- dịch vụ 2 -->
+    <div style="max-width: 220px;">
+      <img src="/Images/Dvphauthuat.jpg" class="service-img" alt="Kham benh"  />
+      <p style="font-weight: bold;">PHẪU THUẬT</p>
+       <a href="Phauthuat.html" class="read-more">XEM THÊM →</a>
+    </div>
+
+    <!-- dịch vụ 3 -->
+    <div style="max-width: 220px;">
+      <img src="/Images/Khambenh.png"  class="service-img" alt="Kham benh" />
+      <p style="font-weight: bold;">KHÁM BỆNH</p>
+       <a href="Dvkhambenh.html" class="read-more">XEM THÊM →</a>
+    </div>
+
+    <!-- dịch vụ 4 -->
+    <div style="max-width: 220px;">
+      <img src="/Images/Nguyen Van Anh.jpg" class="service-img" alt="Dr. Nguyễn Vân Anh" />
+      <p style="font-weight: bold;">ĐIỀU TRỊ NỘI TRÚ</p>
+       <a href="Dtrinoitru.html" class="read-more">XEM THÊM →</a>
+    </div>
+ <!-- dịch vụ 5 -->
+    <div style="max-width: 220px;">
+      <img src="/Images/Thu trang.jpg" class="service-img" alt="Nguyễn Thu Trang" />
+      <p style="font-weight: bold;">TIÊM PHÒNG </p>
+       <a href="Tiemphong.html" class="read-more">XEM THÊM →</a>
+    </div>
+
+ <!-- dịch vụ 6 -->
+    <div style="max-width: 220px;">
+      <img src="Images/Thu trang.jpg" class="service-img" alt="Spa" />
+      <p style="font-weight: bold;">SPA-CẮT TỈA</p>
+       <a href="Dvspa.html" class="read-more">XEM THÊM →</a>
+    </div>
+
+<!-- dịch vụ 7 -->
+    <div style="max-width: 220px;">
+      <img src="Images/holtel.png" class="service-img" alt="Holtel" />
+      <p style="font-weight: bold;">KHÁCH SẠN</p>
+       <a href="capcuu.html" class="read-more">XEM THÊM →</a>
+    </div>
+
+  <!-- dịch vụ 8 -->
+    <div style="max-width: 220px;">
+      <img src="/Images/Dicvuduadon.png" class="service-img" alt="Van chuyen" />
+      <p style="font-weight: bold;">VẬN CHUYỂN</p>
+       <a href="capcuu.html" class="read-more">XEM THÊM →</a>
+    </div>
+
+</div>
+ </section>
+
+<!--
+<!--Ca bệnh thực tế
+<section style="padding: 40px; text-align: center;">
+  <h2 style="font-size: 28px; font-weight: bold;">CA BỆNH THỰC TẾ</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
+  </section>
+-->
+<!--Box chat-->
+<div class="contact-float">
+  <div class="contact-menu" id="contactMenu">
+    <a href="https://m.me/HomePetBacNinh" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="20"/> Chat qua Facebook
+    </a>
+    <a href="https://zalo.me/0978143326" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" width="20"/> Chat qua Zalo
+    </a>
+    <a href="Footer.html">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="20"/> Thông tin cửa hàng
+    </a>
+  </div>
+  <button class="contact-toggle shake" onclick="toggleContactMenu()">✕</button>
+
+</div>
+
+<script>
+ function toggleContactMenu() {
+  const menu = document.getElementById("contactMenu");
+  const btn = document.querySelector(".contact-toggle");
+  let contactOpen = false;
+  contactOpen = !contactOpen;
+  menu.style.display = contactOpen ? "block" : "none";
+
+  btn.innerHTML = contactOpen
+    ? '<span style="font-size: 32px;">✕</span>'
+    : '<span style="font-size: 32px;">💬</span>';
+}
+
+// Hiển thị biểu tượng 💬 lúc đầu
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".contact-toggle").innerHTML = '<span style="font-size: 32px;">💬</span>';
+});
+
+</script>
+<!-- Scrip phần danh sach nhân sự-->
+<script>
+  const track = document.getElementById('staffSliderTrack');
+  const memberWidth = 200; // 180 ảnh + 20 padding
+  const total = track.children.length;
+  const visibleCount = 4;
+  let index = 0;
+
+  setInterval(() => {
+    index++;
+    if (index > total - visibleCount) index = 0;
+    track.style.transform = `translateX(-${index * memberWidth}px)`;
+  }, 3000);
+</script>
+
+
+
+ </body>
+
+
+<!--Link phần footer qua-->
+<div id="footer-placeholder"></div>
+
+ <script>
+          fetch('footer.html')
+          .then(res => res.text())
+          .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+ </script>
+
+
+
+    </html>
